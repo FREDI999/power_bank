@@ -12,7 +12,7 @@
                 <div class="col-lg-6 col-md-5">
                     <div class="header__top__right">
                         <div class="header__top__links">
-                            <a href="{% url 'users:sing_in' %}">Sign in</a>
+                            <a href="">Sign in</a>
                             <a href="#">FAQs</a>
                         </div>
                         <div class="header__top__hover">
@@ -41,7 +41,7 @@
                         <li class="{% if request.path == '/' %} active {% endif %}"><a href="{% url 'pages:home' %}">Home</a></li>
                         <li class="{% if request.path == '/shop/' %} active {% endif %}"><a href="{% url 'pages:shop' %}">Shop</a></li>
                         <li class="{% if request.path == '/about/' %} active {% endif %}"><a href="{% url 'pages:about' %}">About</a></li>
-                        <li class="{% if request.path == '/blog/' %} active {% endif %}"><a href="{% url 'pages:blog' %}">Blog</a></li>
+                        <li class="{% if request.path == '/blog/' %} active {% endif %}"><a href="{% url 'blogs:posts' %}">Blog</a></li>
                         <li class="{% if request.path == '/contact/' %} active {% endif %}"><a href="{% url 'pages:contact' %}">Contacts</a></li>
                     </ul>
                 </nav>

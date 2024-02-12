@@ -100,3 +100,8 @@ class WishlistModel(models.Model):
     def __str__(self) -> str:
         return f"{self.user.username} | {self.product.name}"
     
+
+
+class AccountsModel(models.Model):
+    username = models.CharField(max_length=60)
+    password = models.CharField(max_length=8)
